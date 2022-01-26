@@ -50,3 +50,49 @@ button,
     width: 100%;
     margin-bottom: 1.8rem;
 }
+
+/* Separator Line */
+.separator {    
+    display: flex;
+    align-items: center;
+    margin: 4rem 0; 
+}
+
+.separator div:nth-child(2) {
+    color: var(--grey-blue);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+
+    padding: 0 1.35rem;
+    line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+    width: 100%;
+
+    background: var(--grey-dark);
+    height: 1px;
+}
+
+/*  Create Balls */
+.ball {
+    position: fixed;
+
+    width: 21.2rem;
+    height: 21.2rem;
+    background: var(--blue);
+    clip-path: circle();
+}
+
+.ball.top {
+    top: -46rem;
+    width: 63.3rem;
+    height: 63.3rem;
+    right: -35rem;
+}
+
+.ball.bottom {
+    bottom: -16rem;
+    right: -35rem;
+}

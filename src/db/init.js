@@ -1,4 +1,4 @@
-const Database = require("./config");
+const Database = require("./config")
 
 const initDb = {
     async init(){
@@ -18,6 +18,10 @@ const initDb = {
 
         await db.close()
     }
-};
+}
 
 initDb.init();
+
+
+
+
